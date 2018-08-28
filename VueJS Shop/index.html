@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VueJS Shop</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="description" content="Free VueJS2 Shop Tutorials">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Vue.JS2">
+    <meta name="author" content="YessOn">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/icon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="nav-bar"><h1>Vue.JS2 Mini Shop</h1></div>
+
+	<div id="app">
+	  	<div class="cart">
+		  	<p>Cart({{cart.length}})</p>
+	  	</div>
+	  	<socks :premium="premium" @add-to-cart="updateCart"></socks>
+	  	<socks :premium="premium" @add-to-cart="updateCart"></socks>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
